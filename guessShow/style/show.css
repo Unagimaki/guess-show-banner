@@ -1,0 +1,111 @@
+.show {
+    opacity: 0;
+    transition: opacity .5s linear;
+    width: inherit;
+    height: inherit;
+    background: url(../images/show/show_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5.4vw;
+}
+.show_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.show_header {
+    width: 38.89vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4vw;
+    margin-bottom: 4.18vw;
+}
+.show_logo {
+    width: 36.25vw;
+    height: 7.78vw;
+    margin-left: 3.89vw;
+}
+.transparent {
+    opacity: .5;
+}
+.show_round {
+    width: 6.94vw;
+    height: auto;
+    max-width: 100px;
+}
+.show_desc {
+    transition: opacity .5s linear;
+    display: flex;
+    align-items: center;
+    width: 82.36vw;
+    height: 22.29vw;
+    text-align: center;
+    padding: 2.68vw 3.5vw;
+    border: 0.5vw dashed #fff;
+    border-radius: 3.61vw;
+    font-size: 2.29vw;
+    color: #fff;
+    margin-bottom: 5.49vw;
+    font-family: 'VKDisplay Medium';
+}
+.show_buttons {
+    width: 59.31vw;
+    display: flex;
+    flex-direction: column;
+}
+.stroke {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.stroke:nth-child(1) {
+    margin-bottom: 3.61vw;
+}
+.show_button {
+    transition: opacity .5s linear;
+    text-transform: uppercase;
+    font-size: 2.29vw;
+    font-family: 'VKDisplay DemiBold';
+    color: #fff;
+    width: 28.26vw;
+    height: 5.56vw;
+    border-radius: 71px;
+    position: relative;
+    overflow: hidden;
+    background-color: #0077FF;
+
+}
+.show_button.match:before {
+    content: '';
+    width: 35%;
+    height: 200%;
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0.5;
+    -webkit-filter: blur;
+            filter: blur;
+    background: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(40%, #fff), color-stop(60%, #fff), to(transparent));
+    background: -o-linear-gradient(right, transparent 0%, #fff 40%, #fff 60%, transparent 100%);
+    background: linear-gradient(to left, transparent 0%, #fff 40%, #fff 60%, transparent 100%);
+    -webkit-transform: translate(-100%, -25%) rotate(10deg);
+        -ms-transform: translate(-100%, -25%) rotate(10deg);
+            transform: translate(-100%, -25%) rotate(10deg);
+    -webkit-animation: blick 2s forwards;
+            animation: blick 2s forwards;
+}
+@keyframes blick {
+    0% {
+      -webkit-transform: translate(-100%, -25%) rotate(20deg);
+              transform: translate(-100%, -25%) rotate(20deg);
+    }
+
+    100% {
+      -webkit-transform: translate(500%, -25%) rotate(20deg);
+              transform: translate(500%, -25%) rotate(20deg);
+    }
+}

@@ -1,0 +1,72 @@
+.intro {
+    background: url(../images/intro_background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: inherit;
+    height: inherit;
+    transition: .5s opacity;
+}
+.intro_border {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0vw;
+    left: 0vw;
+}
+.intro_words {
+    width: 36.67vw;
+    height: 39.93vw;
+    position: absolute;
+    left: 52vw;
+    top: 22.5vw;
+    animation: words 2s infinite;
+}
+@keyframes words {
+    0% {
+        top: 22.5vw;
+    }
+    50% {
+        top: 20.5vw;
+    }
+    100% {
+        top: 22.5vw;
+    }
+}
+.intro_inner {
+    padding-top: 13.89vw;
+    position: relative;
+    padding-left: 12vw;
+}
+.logo {
+    width: 39.93vw;
+    height: 8.54vw;
+}
+.intro_info {
+    margin-top: 9.1vw;
+    margin-bottom: 8.13vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+            flex-direction: column;
+}
+.intro_title {
+    font-family: 'VKDisplay Medium';
+    font-size: 6.25vw;
+    color: #fff;
+    margin-bottom: 1vw;
+}
+.intro_subtitle {
+    font-family: 'VKDisplay Regular';
+    font-size: 4.93vw;
+    color: #fff;
+}
+.intro_button {
+    width: 21.18vw;
+    padding-top: 1.3vw;
+    padding-bottom: 1.8vw;
+    color: #fff;
+    background-color: #0077FF;
+    border-radius: 4.31vw;
+    font-family: 'VKDisplay DemiBold';
+    font-size: 3vw;
+}

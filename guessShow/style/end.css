@@ -1,0 +1,88 @@
+.end_body {
+    opacity: 0;
+    transition: opacity .5s linear;
+    padding-top: 12.85vw;
+    width: inherit;
+    height: inherit;
+    background: url(../images/end/end_back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.logo_container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3.26vw;
+}
+.end_logo {
+    width: 30.28vw;
+    height: 6.25vw;
+    margin: 0 auto;
+}
+.end_border {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0vw;
+    left: 0vw;
+    z-index: 1;
+}
+.end_title {
+    font-size: 4.17vw;
+    font-family: 'VKDisplay Medium';
+    color: #fff;
+    margin-bottom: 19.72vw;
+    position: relative;
+    text-align: center;
+}
+
+.end_image {
+    position: absolute;
+    top: 29.72vw;
+    z-index: 99;
+    transition: all 15s;
+    height: 14.24vw;
+}
+.end_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    padding: 0 10px;
+    margin: 0 auto;
+    padding: 0 6.74vw;
+}
+.info_text {
+    text-align: center;
+    width: 63.7vw;
+    color: #fff;
+    font-size: 2.78vw;
+    font-family: 'VKDisplay Medium';
+    margin-bottom: 4.17vw;
+}
+.end_button {
+    width: 21.18vw;
+    padding-top: 1.3vw;
+    padding-bottom: 1.7vw;
+    background-color: #0077FF;
+    color: #fff;
+    font-size: 3vw;
+    font-family: 'VKDisplay DemiBold';
+    border-radius: 5.24vw;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(0.9);
+                transform: scale(0.9);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
